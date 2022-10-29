@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:services="clr-namespace:Problem.Localization.Services"
+             x:Class="Problem.Localization.MainPage">
+
+    <Border
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 5"
+                    Stroke="#505562">
+        <VerticalStackLayout
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="FillAndExpand">
+            <Image 
+                            Source="empty_list.svg"
+                            VerticalOptions="Center">
+            </Image>
+            <Label 
+                            TextColor="#505562" 
+                            FontSize="Medium" 
+                            VerticalOptions="Center" 
+                            HorizontalTextAlignment="Center" 
+                            VerticalTextAlignment="Center" 
+                            Text="{services:LocalizationService HelloWorldText}" />
+        </VerticalStackLayout>
+    </Border>
+
+</ContentPage>
